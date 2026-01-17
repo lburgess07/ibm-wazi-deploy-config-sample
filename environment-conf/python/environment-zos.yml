@@ -10,7 +10,7 @@
 apiVersion: deploy.ibm.com/v1
 kind: Environment
 metadata:
-  name: "tivlp02.svl.ibm.com"
+  name: "tvt6031.pok.stglabs.ibm.com"
   version: 1.0.0
 
 include_common_vars:
@@ -79,5 +79,5 @@ seq_spec_a:
   secondary_space: 1TRK
   record_format: FB
   record_length: 15
-hlq: "{{ extra_vars.hlq if extra_vars.hlq is defined else 'NAZARE.WDEPLOY.PYTHON' }}"
+hlq: "{{ extra_vars.hlq if extra_vars.hlq is defined else 'BURGESS.WDEPLOY.PYTHON' }}"
 uss_root: "{{ extra_vars.uss_root if extra_vars.uss_root is defined else '/tmp/uss_root' }}"
